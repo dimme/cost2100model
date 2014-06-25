@@ -36,7 +36,7 @@ function MS_new = update_chan( MS, paraEx,paraSt )
 
 MS_new = MS;
 pos_MS_old = MS.pos;
-pos_MS_new = pos_MS_old + MS.velo*paraEx.snap_rate;
+pos_MS_new = pos_MS_old + MS.velo*paraEx.snap_rate.^(-1);
 
 for m = 1:paraSt.n_mpc %Only update the local cluster at MS side 
     d_local_mpc_MS(m) = calc_dist(MS.mpc_local.pos_MS(m,1:2),pos_MS_new(1:2)'); %Distance of old mpcs to new MS    
