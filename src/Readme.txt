@@ -1,4 +1,12 @@
 \\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+The updated version 2.3.5 is implemented by Meifang Zhu, Lund University, Sweden.
+The get_H and get_dipole_G have been updated
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
+The updated version 2.3.4 is implemented by Meifang Zhu, Lund University, Sweden.
+The update_chan has been updated
+
+\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\\
 The updated version 2.3.3 is implemented by Meifang Zhu, Lund University, Sweden.
 Two scenarios are implemented so far
 SemiUrban_300MHz: both NLOS and LOS single link MIMO simulations 
