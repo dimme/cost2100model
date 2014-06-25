@@ -32,7 +32,7 @@ function [Gtx, Grx] = get_dipole_G(Ntx,Nrx)
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 
 % therotical dipole antenna gain
-Theta = (0:1:180)/180*pi;
+Theta = (-90:1:90)/180*pi;
 Phi = (0:1:360)/180*pi;
 Np = length(Phi);
 Nt = length(Theta);
@@ -40,10 +40,10 @@ G = zeros(Np,Nt);
 for nn = 1:Np
     for mm = 1:Nt
         theta = Theta(mm);
-        if theta == 0 || theta == 180 || theta == 360
+        if theta == -90/180*pi || theta == 90 /180*pi
             G(nn,mm) = 0;
         else
-            G(nn,mm) = cos(pi/2*cos(theta))/sin(theta);
+            G(nn,mm) = cos(pi/2*sin(theta))/cos(theta);
         end
     end
 end

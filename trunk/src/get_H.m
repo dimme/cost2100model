@@ -111,9 +111,9 @@ else
     aoa=channel.h_los(3);
     eoa=channel.h_los(4);
     msv=[sin(eoa)*cos(aoa) sin(eoa)*sin(aoa) cos(eoa)];
-    msv=bsv*rotate_matrix(rxRot(1),rxRot(2));
-    aod=acos(msv(3));
-    eod=atan2(msv(2),msv(1));
+    msv=msv*rotate_matrix(rxRot(1),rxRot(2));
+    aoa=acos(msv(3));
+    eoa=atan2(msv(2),msv(1));
         
     [tmp txAziInd]= min(abs(txAziRange-aod*180/pi));
     [tmp txEleInd]= min(abs(txEleRange-eod*180/pi));
